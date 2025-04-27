@@ -27,6 +27,7 @@ router.post('/register', async (req, res) => {
         id: newUser._id,
         username: newUser.username,
         msg: 'User registered successfully',
+        //okkk
       },
     });
   } catch (err) {
