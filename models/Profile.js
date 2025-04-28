@@ -19,5 +19,22 @@ const ProfileSchema = new mongoose.Schema({
     instagram: { type: String },
     linkedin: { type: String },
   },
+  location: {
+    type: String, 
+  },
+  website: {
+    type: String, 
+  },
+  interests: {
+    type: [String], 
+  },
+  dateOfBirth: {
+    type: Date, 
+  },
+  gender: {
+    type: String,
+    enum: ['Male', 'Female', 'Other'], 
+  },
 }, { timestamps: true }); 
+
 module.exports = mongoose.model('Profile', ProfileSchema);
